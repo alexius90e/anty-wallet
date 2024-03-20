@@ -1,3 +1,83 @@
 .step-one {
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 8px;
+    font-weight: 500;
+    font-size: 22px;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(../assets/icons/lock.svg) center no-repeat;
+    }
+  }
+
+  &__description {
+    margin: 0 0 62px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #606874;
+    text-align: center;
+  }
+
+  &__form {
+    max-width: 292px;
+    margin: 0 auto;
+
+    &-inputs {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0 0 33px;
+      border: none;
+    }
+
+    &-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 58px;
+      width: 58px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      color: $white;
+      border: none;
+      border-radius: 12px;
+      background: #18202c;
+      outline: none;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    &-label {
+      font-weight: 300;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    &-buttons {
+      padding: 0;
+      border: none;
+    }
+  }
 }

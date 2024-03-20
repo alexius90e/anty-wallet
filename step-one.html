@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anty Wallet</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <section class="step-one">
+        <div class="container">
+          <div class="screen-header">
+            <a href="./index.html" class="screen-header__back"></a>
+            <div class="screen-header__name">Step 1</div>
+          </div>
+
+          <div>
+            <h2 class="step-one__title">Create your PIN</h2>
+
+            <div class="step-one__description">
+              Congratulations, your wallet has been created and is ready to use
+            </div>
+
+            <form class="step-one__form">
+              <fieldset class="step-one__form-inputs">
+                <input class="step-one__form-input" type="number" min="0" max="9" />
+                <input class="step-one__form-input" type="number" min="0" max="9" />
+                <input class="step-one__form-input" type="number" min="0" max="9" />
+                <input class="step-one__form-input" type="number" min="0" max="9" />
+              </fieldset>
+
+              <div class="step-one__form-label">Create your PIN</div>
+
+              <fieldset class="step-one__form-buttons" style="display: none">
+                <button class="button button_primary">Create wallet</button>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="keyboard">
+            <button class="keyboard__button">1</button>
+            <button class="keyboard__button">2</button>
+            <button class="keyboard__button">3</button>
+            <button class="keyboard__button">4</button>
+            <button class="keyboard__button">5</button>
+            <button class="keyboard__button">6</button>
+            <button class="keyboard__button">7</button>
+            <button class="keyboard__button">8</button>
+            <button class="keyboard__button">9</button>
+            <button class="keyboard__button">Clear</button>
+            <button class="keyboard__button">0</button>
+            <button class="keyboard__button keyboard__button_backspace"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
