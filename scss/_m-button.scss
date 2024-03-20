@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  transition: transform ease-in-out 0.1s;
+  will-change: transform;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+
+  &_primary {
+    background: #474ef2;
+  }
+
+  &_secondary {
+    background: #263347;
+  }
+}

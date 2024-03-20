@@ -1,0 +1,28 @@
+.auth {
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba($color: $white, $alpha: 0.6);
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
